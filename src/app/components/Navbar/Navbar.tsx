@@ -19,7 +19,7 @@ const Navbar = () => {
             <div className='flex items-center font-medium gap-8 justify-around'>
                 <div className='z-50 p-0 md:w-auto w-full flex justify-between'>
                     <HorizontalLogo />
-                    <MenuButton toggleMenu={toggleMenu} isMenuOpen={isMenuOpen}/>
+                    <MenuButton toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
                 </div>
                 <ul className='md:flex hidden uppercase items-center gap-8 font-exo2'>
                     <NavLinks />

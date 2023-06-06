@@ -1,13 +1,8 @@
-import Image from 'next/image'
-import Navbar from './components/Navbar/Navbar'
-
+import ForTeamsPage from './pages/teams/page'
 export default function Home() {
   return (
-    <main>
-      <div>
-        <Navbar />
-      </div>
-
-    </main>
+    <>
+      <ForTeamsPage />
+    </>
   )
 }

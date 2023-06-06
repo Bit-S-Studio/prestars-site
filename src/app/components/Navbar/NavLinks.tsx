@@ -3,19 +3,19 @@ import React from "react";
 
 const NavLinks = () => {
     const links = [
-        { name: 'Para equipes' },
-        { name: 'Para atletas' },
-        { name: 'Sobre nós' },
+        { name: 'Para equipes', href: '/pages/teams' },
+        { name: 'Para atletas', href: '/pages/athletes' },
+        { name: 'Sobre nós', href: '/pages/about' },
     ];
     return (
         <>
-            {links.map((Link) => (
-                <div>
-                    <div className="px-3 text-left md:cursor-pointer">
-                        <h1 className="py-7">
-                            {Link.name}
-                        </h1>
-                    </div>
+            {links.map((link) => (
+
+
+                <div className="px-3 py-7 text-left md:cursor-pointer">
+                    <Link href={link.href}>
+                        {link.name}
+                    </Link>
                 </div>
             ))}
         </>

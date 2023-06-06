@@ -1,3 +1,4 @@
+import Layout from './components/Layout'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -16,7 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <Layout>
+          {children}
+        </Layout>
+      </body>
     </html>
   )
 }
