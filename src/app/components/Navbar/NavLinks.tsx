@@ -3,9 +3,9 @@ import React from "react";
 
 const NavLinks = () => {
     const links = [
-        { name: 'Para equipes', href: '/pages/teams' },
-        { name: 'Para atletas', href: '/pages/athletes' },
-        { name: 'Sobre nós', href: '/pages/about' },
+        { name: 'Para equipes', href: '/teams' },
+        { name: 'Para atletas', href: '/athletes' },
+        { name: 'Sobre nós', href: '/about' },
     ];
     return (
         <>
